@@ -25,6 +25,8 @@ This version of the CYW9P62S1-43012EVB-01 BSP was validated for compatibility wi
 * [CYW9P62S1-43012EVB-01 BSP API Reference Manual][api]
 * [CYW9P62S1-43012EVB-01 Documentation](http://www.cypress.com/documentation/development-kitsboards/cyw9p62s1_43012evb_01)
 * [Cypress Semiconductor](http://www.cypress.com)
+* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
+* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: modules.html
 
