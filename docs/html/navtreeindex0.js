@@ -70,6 +70,7 @@ var NAVTREEINDEX0 =
 "group__group__bsp__pins__comm.html#gae6e87550c84afee0acdd08b5a7b1d90c":[1,1,2,22],
 "group__group__bsp__pins__comm.html#gaea8cd882c067c13b1411796d5235286d":[1,1,2,16],
 "group__group__bsp__pins__comm.html#gaedb2fc7c65fd4765368a9fc8acf16b44":[1,1,2,8],
+"group__group__bsp__pins__j2.html":[1,1,4],
 "group__group__bsp__pins__led.html":[1,1,0],
 "group__group__bsp__pins__led.html#ga5e8df86514516cce06b41a40f749c898":[1,1,0,3],
 "group__group__bsp__pins__led.html#gaabc3ce31f840a85f1063ff3029ab79eb":[1,1,0,2],

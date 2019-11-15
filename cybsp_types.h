@@ -250,6 +250,13 @@ extern "C" {
 
 /** \} group_bsp_pins_arduino */
 
+
+/**
+* \addtogroup group_bsp_pins_j2 J2 Header Pins
+* \{
+* All the pins, other than A0-A5 are No Connects
+* \} group_bsp_pins_j2 */
+
 /** \} group_bsp_pins */
 
 #endif /* defined(CY_USING_HAL) */
