@@ -2,14 +2,16 @@
 The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WP1-2019-C1 Module. USI WP1-2019-C1 is a System in Package (SiP) module that contains the MCU part, PSoC 62 MCU (CY8C6247FDI-D32) and the radio part CYW43012 ( WiFi + Bluetooth Combo Chip).
 
 ### What's New In This Release?
-* Added pin references for the board's J2 Header
+* This release adds updated linker scripts and startup code for the CM0+ and CM4 cores. The files are now in core specific directories.
+* Minor updates up avoid potential warnings on some toolchains
 
 ### What's Included?
 The CYW9P62S1-43012EVB-01 library includes the following:
 * BSP specific makefile to configure the build process for the board
 * cybsp.c/h files to initialize the board and any system peripherals
 * cybsp_types.h file describing basic board setup
-* Linker script & startup code for GCC, IAR, ARM toolchains
+* CM4 Linker script & startup code for GCC, IAR, ARM toolchains
+* CM0+ Linker script & startup code for GCC, IAR, ARM toolchains
 * Configurator design files (and generated code) to setup board specific peripherals
 * .lib file references for all dependent libraries
 * API documentation
@@ -28,6 +30,8 @@ This version of the CYW9P62S1-43012EVB-01 BSP was validated for compatibility wi
 * [CYW9P62S1-43012EVB-01 BSP API Reference Manual][api]
 * [CYW9P62S1-43012EVB-01 Documentation](http://www.cypress.com/documentation/development-kitsboards/cyw9p62s1_43012evb_01)
 * [Cypress Semiconductor](http://www.cypress.com)
+* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
+* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: modules.html
 

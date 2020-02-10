@@ -36,8 +36,8 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 
 * System Active Power Mode: LP
 * System Idle Power Mode: Deep Sleep
-* VDDA Voltage: 3300 mV
-* VDDD Voltage: 3300 mV
+* VDDA Voltage: 1800 mV
+* VDDD Voltage: 1800 mV
 
 ## API Reference Manual
 
@@ -49,6 +49,8 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 * [CYW9P62S1-43012EVB-01 BSP API Reference Manual][api]
 * [CYW9P62S1-43012EVB-01 Documentation](http://www.cypress.com/documentation/development-kitsboards/cyw9p62s1_43012evb_01)
 * [Cypress Semiconductor](http://www.cypress.com)
+* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
+* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: https://cypresssemiconductorco.github.io/TARGET_CYW9P62S1-43012EVB-01/html/modules.html
 

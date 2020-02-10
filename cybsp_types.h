@@ -190,6 +190,15 @@ extern "C" {
 /** Pin: QUAD SPI SCK */
 #define CYBSP_QSPI_SCK              (P11_7)
 
+/** Pin: SPI MOSI */
+#define CYBSP_SPI_MOSI              (P0_2)
+/** Pin: SPI MISO */
+#define CYBSP_SPI_MISO              (P0_3)
+/** Pin: SPI CLK */
+#define CYBSP_SPI_CLK               (P0_4)
+/** Pin: SPI CS */
+#define CYBSP_SPI_CS                (P0_5)
+
 /** Host-wake GPIO drive mode */
 #define CYBSP_WIFI_HOST_WAKE_GPIO_DM (CYHAL_GPIO_DRIVE_ANALOG)
 /** Host-wake IRQ event */

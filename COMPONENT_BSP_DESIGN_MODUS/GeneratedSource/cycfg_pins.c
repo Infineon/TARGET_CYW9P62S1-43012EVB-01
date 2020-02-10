@@ -4,8 +4,8 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* cfg-backend-cli: 1.2.0.1478
-* Device Support Library (../../../../output/psoc6/psoc6pdl): 1.4.0.1571
+* Device Configurator: 2.0.0.1483
+* Device Support Library: 1.3.1.1474
 *
 ********************************************************************************
 * Copyright 2017-2019 Cypress Semiconductor Corporation
@@ -72,30 +72,6 @@ const cy_stc_gpio_pin_config_t CYBSP_WCO_OUT_config =
 		.type = CYHAL_RSC_GPIO,
 		.block_num = CYBSP_WCO_OUT_PORT_NUM,
 		.channel_num = CYBSP_WCO_OUT_PIN,
-	};
-#endif //defined (CY_USING_HAL)
-const cy_stc_gpio_pin_config_t CYBSP_CSD_TX_config = 
-{
-	.outVal = 1,
-	.driveMode = CY_GPIO_DM_STRONG_IN_OFF,
-	.hsiom = CYBSP_CSD_TX_HSIOM,
-	.intEdge = CY_GPIO_INTR_DISABLE,
-	.intMask = 0UL,
-	.vtrip = CY_GPIO_VTRIP_CMOS,
-	.slewRate = CY_GPIO_SLEW_FAST,
-	.driveSel = CY_GPIO_DRIVE_1_2,
-	.vregEn = 0UL,
-	.ibufMode = 0UL,
-	.vtripSel = 0UL,
-	.vrefSel = 0UL,
-	.vohSel = 0UL,
-};
-#if defined (CY_USING_HAL)
-	const cyhal_resource_inst_t CYBSP_CSD_TX_obj = 
-	{
-		.type = CYHAL_RSC_GPIO,
-		.block_num = CYBSP_CSD_TX_PORT_NUM,
-		.channel_num = CYBSP_CSD_TX_PIN,
 	};
 #endif //defined (CY_USING_HAL)
 const cy_stc_gpio_pin_config_t CYBSP_SWO_config = 
@@ -424,10 +400,6 @@ void init_cycfg_pins(void)
 	cyhal_hwmgr_reserve(&CYBSP_WCO_OUT_obj);
 #endif //defined (CY_USING_HAL)
 
-#if defined (CY_USING_HAL)
-	cyhal_hwmgr_reserve(&CYBSP_CSD_TX_obj);
-#endif //defined (CY_USING_HAL)
-
 	Cy_GPIO_Pin_Init(CYBSP_SWO_PORT, CYBSP_SWO_PIN, &CYBSP_SWO_config);
 #if defined (CY_USING_HAL)
 	cyhal_hwmgr_reserve(&CYBSP_SWO_obj);
@@ -447,10 +419,12 @@ void init_cycfg_pins(void)
 	cyhal_hwmgr_reserve(&CYBSP_CSD_BTN1_obj);
 #endif //defined (CY_USING_HAL)
 
+	Cy_GPIO_Pin_Init(CYBSP_CINA_PORT, CYBSP_CINA_PIN, &CYBSP_CINA_config);
 #if defined (CY_USING_HAL)
 	cyhal_hwmgr_reserve(&CYBSP_CINA_obj);
 #endif //defined (CY_USING_HAL)
 
+	Cy_GPIO_Pin_Init(CYBSP_CINB_PORT, CYBSP_CINB_PIN, &CYBSP_CINB_config);
 #if defined (CY_USING_HAL)
 	cyhal_hwmgr_reserve(&CYBSP_CINB_obj);
 #endif //defined (CY_USING_HAL)

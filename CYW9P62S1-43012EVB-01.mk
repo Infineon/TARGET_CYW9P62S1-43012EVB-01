@@ -1,6 +1,5 @@
 ################################################################################
 # \file CYW9P62S1-43012EVB-01.mk
-# \version 1.0
 #
 # \brief
 # Define the CYW9P62S1-43012EVB-01 target.
@@ -28,16 +27,15 @@ $(info Processing $(lastword $(MAKEFILE_LIST)))
 endif
 
 # MCU device selection
-DEVICE:=CY8C6247FDI-D32
-
+DEVICE:=CY8C6247FDI-D52
 # Additional devices on the board
 ADDITIONAL_DEVICES:=CYW43012TC0EKUBG
+# Default target core to CM4 if not already set
+CORE?=CM4
 
+ifeq ($(CORE),CM4)
 # Additional components supported by the target
-COMPONENTS+=CM0P_SLEEP BSP_DESIGN_MODUS
-
-# Use CyHAL
-DEFINES+=CY_USING_HAL
-
-# UDB based SDIO component
-DEFINES+=CYHAL_UDB_SDIO
+COMPONENTS+=CM0P_SLEEP BSP_DESIGN_MODUS PSOC6HAL
+# Use CyHAL & UDB based SDIO
+DEFINES+=CY_USING_HAL CYHAL_UDB_SDIO
+endif
