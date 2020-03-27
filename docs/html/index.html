@@ -91,24 +91,39 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Overview</h2>
-<p>The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WP1-2019-C1 Module. USI WP1-2019-C1 is a System in Package (SiP) module that contains the MCU part, PSoC 62 MCU (CY8C6247FDI-D32) and the radio part CYW43012 ( WiFi + Bluetooth Combo Chip). </p><div class="image">
+<p>The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WM-BAC-CYW-50 Module. USI WM-BAC-CYW-50 is a System in Package (SiP) module that contains the PSoC 62 MCU (CY8C6247FDI-D52) and the radio part CYW43012 ( WiFi + Bluetooth Combo Chip). </p><div class="image">
 <img src="board.png" alt="board.png"/>
 </div>
 <p>To use code from the BSP, simply include a reference to <code>cybsp.h</code>.</p>
 <h2>Features</h2>
 <h3>Kit Features:</h3>
 <ul>
+<li>Support of up to 1MB Flash and 288KB SRAM</li>
 <li>BLE v5.0</li>
+<li>IEEE 802.11n, 802.11ac friendly WLAN</li>
+<li>Full-speed USB</li>
 <li>Serial memory interface</li>
 <li>Industry-leading CapSense</li>
 </ul>
 <h3>Kit Contents:</h3>
 <ul>
-<li>CYW9P62S1-43012EVB-01 evaluation board</li>
-<li>Quick Start Guide</li>
+<li>PSoC 6S2 Wi-Fi BT Pioneer Board</li>
 <li>USB Type-A to Micro-B cable</li>
+<li>Quick Start Guide</li>
+<li>Four jumper wires (4 inches each)</li>
+<li>Two jumper wires (5 inches each)</li>
 </ul>
 <h2>BSP Configuration</h2>
+<p>The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the CYW9P62S1-43012EVB-01.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</p>
+<p>Components:</p><ul>
+<li>Device specific HAL reference (e.g.: PSOC6HAL) - This component, enabled by default, pulls in the version of the HAL that is applicable for this board.</li>
+<li>CYBSP_WIFI_CAPABLE - This component, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip.</li>
+<li>BSP_DESIGN_MODUS - This component, enabled by default, causes the Configurator generated code for this specific BSP to be included. This should not be used at the same time as the CUSTOM_DESIGN_MODUS component.</li>
+<li>CUSTOM_DESIGN_MODUS - This component, disabled by default, causes the Configurator generated code from the application to be included. This assumes that the application provides configurator generated code. This should not be used at the same time as the BSP_DESIGN_MODUS component.</li>
+</ul>
+<p>Defines:</p><ul>
+<li>CY_USING_HAL - This define, enabled by default, specifies that the HAL is intended to be used by the application. This will cause the BSP to include the applicable header file and to initialize the system level drivers.</li>
+</ul>
 <h3>Clock Configuration</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -135,13 +150,13 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>More information</h2>
 <ul>
 <li><a href="modules.html">CYW9P62S1-43012EVB-01 BSP API Reference Manual</a></li>
-<li><a href="http://www.cypress.com/documentation/development-kitsboards/cyw9p62s1_43012evb_01">CYW9P62S1-43012EVB-01 Documentation</a></li>
+<li><a href="https://www.cypress.com/documentation/development-kitsboards/cyw9p62s1-43012evb-01-psoc-62s1-wi-fi-bt-pioneer-kit">CYW9P62S1-43012EVB-01 Documentation</a></li>
 <li><a href="http://www.cypress.com">Cypress Semiconductor</a></li>
 <li><a href="https://github.com/cypresssemiconductorco">Cypress Semiconductor GitHub</a></li>
 <li><a href="https://www.cypress.com/products/modustoolbox-software-environment">ModusToolbox</a></li>
 </ul>
 <hr/>
-<p> © Cypress Semiconductor Corporation, 2019. </p>
+<p> © Cypress Semiconductor Corporation, 2019-2020. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part
