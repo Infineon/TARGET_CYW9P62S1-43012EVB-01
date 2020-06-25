@@ -15,14 +15,20 @@ The CYW9P62S1-43012EVB-01 library includes the following:
 * API documentation
 
 ### What Changed?
+#### v1.3.0
+* Minor update for documentation & branding
+* Updated design files to use latest personality files
+* Initialize VDDA voltage if set in configurator
+NOTE: This requires psoc6hal 1.3.0 or later
 #### v1.2.1
-* Add 43012/4343W/43438 component to appropriate BSPs
+* Added 43012/4343W/43438 component to appropriate BSPs
 * Added multi-image policy for secure (064) BSPs
 #### v1.2.0
 * Standardize version numbering for all boards in a family
 * Moved UDB SDIO implementation into its own library udb-sdio-whd library
 * Added call to setup HAL SysPM driver (requires HAL 1.2.0 or later)
 * Updated documentation
+NOTE: This requires psoc6hal 1.2.0 or later
 #### v1.1.0
 * Updated linker scripts and startup code for the CM0+ and CM4 cores. The files are now in core specific directories.
 * Minor updates to avoid potential warnings on some toolchains
@@ -43,8 +49,8 @@ This version of the CYW9P62S1-43012EVB-01 BSP was validated for compatibility wi
 
 ### More information
 * [CYW9P62S1-43012EVB-01 BSP API Reference Manual][api]
-* [CYW9P62S1-43012EVB-01 Documentation](https://www.cypress.com/documentation/development-kitsboards/cyw9p62s1-43012evb-01-psoc-62s1-wi-fi-bt-pioneer-kit)
-* [Cypress Semiconductor](http://www.cypress.com)
+* [CYW9P62S1-43012EVB-01 Documentation](https://www.cypress.com/CYW9P62S1-43012EVB-01)
+* [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
