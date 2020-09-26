@@ -14,8 +14,6 @@ var group__group__bsp__pins__arduino =
     [ "CYBSP_D5", "group__group__bsp__pins__arduino.html#gae918eeaea45fa81576613eebef34335b", null ],
     [ "CYBSP_D6", "group__group__bsp__pins__arduino.html#gaa436fdcdd1417ce4db7d0d8d4615d60b", null ],
     [ "CYBSP_D7", "group__group__bsp__pins__arduino.html#ga0875edb9e551c5eb01ac66dd27faf33a", null ],
-    [ "CYBSP_D8", "group__group__bsp__pins__arduino.html#ga403c81e9f770b42e8a77668c9695b2dd", null ],
-    [ "CYBSP_D9", "group__group__bsp__pins__arduino.html#gab89ecd0381439ac9c927af7538f2afc4", null ],
     [ "CYBSP_D10", "group__group__bsp__pins__arduino.html#ga1246432b2f280267d3b9fd90028f6244", null ],
     [ "CYBSP_D11", "group__group__bsp__pins__arduino.html#gac7cddcd52b382156d8cb1af96d7988b8", null ],
     [ "CYBSP_D12", "group__group__bsp__pins__arduino.html#gaf9602a0824b644e2c54716c328b659e8", null ],
