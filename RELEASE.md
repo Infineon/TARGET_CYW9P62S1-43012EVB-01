@@ -1,5 +1,5 @@
 # CYW9P62S1-43012EVB-01 BSP Release Notes
-The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI  WM-BAC-CYW-50 Module. USI  WM-BAC-CYW-50 is a System in Package (SiP) module that contains the PSoC 62 MCU (CY8C6247FDI-D52) and the radio part CYW43012 ( WiFi + Bluetooth Combo Chip).
+The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WM-BAC-CYW-50 Module. USI WM-BAC-CYW-50 is a System in Package (SiP) module that contains the PSoC 62 MCU (CY8C6247FDI-D52) and the radio part CYW43012 (WiFi + Bluetooth Combo Chip).
 
 NOTE: BSPs are versioned by family. This means that version 1.2.0 of any BSP in a family (eg: PSoC 6) will have the same software maturity level. However, not all updates are necessarily applicable for each BSP in the family so not all version numbers will exist for each board. Additionally, new BSPs may not start at version 1.0.0. In the event of adding a common feature across all BSPs, the libraries are assigned the same version number. For example if BSP_A is at v1.3.0 and BSP_B is at v1.2.0, the event will trigger a version update to v1.4.0 for both BSP_A and BSP_B. This allows the common feature to be tracked in a consistent way.
 
@@ -8,17 +8,24 @@ The CYW9P62S1-43012EVB-01 library includes the following:
 * BSP specific makefile to configure the build process for the board
 * cybsp.c/h files to initialize the board and any system peripherals
 * cybsp_types.h file describing basic board setup
-* CM4 Linker script & startup code for GCC, IAR, ARM toolchains
-* CM0+ Linker script & startup code for GCC, IAR, ARM toolchains
+* CM4 Linker script & startup code for GCC, IAR, and ARM toolchains
+* CM0+ Linker script & startup code for GCC, IAR, and ARM toolchains
 * Configurator design files (and generated code) to setup board specific peripherals
 * .lib file references for all dependent libraries
 * API documentation
 
 ### What Changed?
+#### v2.1.0
+* Added component CAT1 to all boards
+* Added new components for connectivity chips
+* Added BT configuration settings for boards that support it
+* Minor documentation updates
+#### v2.0.1
+* Minor update to better handle when to include the SCL library in the build
 #### v2.0.0
 * Updated design files and GeneratedSource with ModusToolbox 2.2 release
 * Migrated pin definitions into design.modus file
-* Updated clock frequencies to 144 MHz (fast) / 72 MHz (slow)
+* Updated clock frequencies to 100 MHz (fast) / 50 MHz (slow)
 * Updated MPNs on some boards to non-obsolete parts
 * Switched psoc6pdl dependency to new mtb-pdl
 * Switched psoc6hal dependency to new mtb-hal
@@ -51,8 +58,8 @@ This version of the CYW9P62S1-43012EVB-01 BSP was validated for compatibility wi
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox Software Environment         | 2.2     |
-| GCC Compiler                              | 9.2     |
+| ModusToolbox Software Environment         | 2.2.1   |
+| GCC Compiler                              | 9.3.1   |
 | IAR Compiler                              | 8.4     |
 | ARM Compiler                              | 6.11    |
 
@@ -68,4 +75,4 @@ Minimum required ModusToolbox Software Environment: v2.2
 [api]: modules.html
 
 ---
-© Cypress Semiconductor Corporation, 2019-2020.
+© Cypress Semiconductor Corporation, 2019-2021.
