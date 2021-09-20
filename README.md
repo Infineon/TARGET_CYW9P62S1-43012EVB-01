@@ -70,11 +70,11 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 * [CYW9P62S1-43012EVB-01 BSP API Reference Manual][api]
 * [CYW9P62S1-43012EVB-01 Documentation](https://www.cypress.com/CYW9P62S1-43012EVB-01)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
-* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
+* [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
-[api]: https://cypresssemiconductorco.github.io/TARGET_CYW9P62S1-43012EVB-01/html/modules.html
-[settings]: https://cypresssemiconductorco.github.io/TARGET_CYW9P62S1-43012EVB-01/html/md_bsp_settings.html
+[api]: https://infineon.github.io/TARGET_CYW9P62S1-43012EVB-01/html/modules.html
+[settings]: https://infineon.github.io/TARGET_CYW9P62S1-43012EVB-01/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation, 2019-2021.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2021.

@@ -103,6 +103,9 @@
                     <Alias value="CYBSP_LED9"/>
                     <Alias value="CYBSP_USER_LED2"/>
                 </Block>
+                <Block location="ioss[0].port[11].pin[1]">
+                    <Alias value="CYBSP_QSPI_FRAM_SSEL"/>
+                </Block>
                 <Block location="ioss[0].port[11].pin[2]">
                     <Alias value="CYBSP_QSPI_SS"/>
                 </Block>

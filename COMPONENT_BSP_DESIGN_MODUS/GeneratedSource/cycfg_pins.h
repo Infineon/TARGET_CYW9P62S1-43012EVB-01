@@ -127,7 +127,11 @@ extern "C" {
 	#define CYBSP_USER_LED2 CYBSP_LED9
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
+	#define CYBSP_QSPI_FRAM_SSEL (P11_1)
+#endif //defined (CY_USING_HAL)
+#if defined (CY_USING_HAL)
 	#define CYBSP_QSPI_SS (P11_2)
+	#define CYBSP_QSPI_FLASH_SSEL CYBSP_QSPI_SS
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
 	#define CYBSP_QSPI_D3 (P11_3)
