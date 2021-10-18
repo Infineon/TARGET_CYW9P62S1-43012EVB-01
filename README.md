@@ -17,7 +17,7 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 * IEEE 802.11n, 802.11ac friendly WLAN
 * Full-speed USB
 * Serial memory interface
-* Industry-leading CapSense
+* Industry-leading CAPSENSE
 
 ### Kit Contents:
 
@@ -71,7 +71,7 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 * [CYW9P62S1-43012EVB-01 Documentation](https://www.cypress.com/CYW9P62S1-43012EVB-01)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: https://infineon.github.io/TARGET_CYW9P62S1-43012EVB-01/html/modules.html
 [settings]: https://infineon.github.io/TARGET_CYW9P62S1-43012EVB-01/html/md_bsp_settings.html
