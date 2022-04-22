@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['arduino_20header_20pins',['Arduino Header Pins',['../group__group__bsp__pins__arduino.html',1,'']]]
+  ['cyw9p62s1_2d43012evb_2d01_20bsp_0',['CYW9P62S1-43012EVB-01 BSP',['../index.html',1,'']]]
 ];
