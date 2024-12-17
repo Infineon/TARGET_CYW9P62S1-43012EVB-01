@@ -2,7 +2,7 @@
 
 ## Overview
 
-The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WM-BAC-CYW-50 Module. USI WM-BAC-CYW-50 is a System in Package (SiP) module that contains the PSoC™ 62 MCU (CY8C6247FDI-D52) and the radio part CYW43012 (WiFi + Bluetooth Combo Chip).
+The CYW9P62S1-43012EVB-01 Kit is a low-cost hardware platform that enables design and debug of the USI WM-BAC-CYW-50 Module. USI WM-BAC-CYW-50 is a System in Package (SiP) module that contains the PSOC™ 62 MCU (CY8C6247FDI-D52) and the radio part CYW43012 (WiFi + Bluetooth Combo Chip).
 
 ![](docs/html/board.png)
 
@@ -21,7 +21,7 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 
 ### Kit Contents:
 
-* PSoC™ 6S2 Wi-Fi BT Pioneer Board
+* PSOC™ 6S2 Wi-Fi BT Pioneer Board
 * USB Type-A to Micro-B cable
 * Quick Start Guide
 * Four jumper wires (4 inches each)
