@@ -57,5 +57,5 @@ DEVICE_CYW43012TC0EKUBG_DIE:=43012C0
 DEVICE_CYW43012TC0EKUBG_FLASH_KB:=0
 DEVICE_CYW43012TC0EKUBG_SRAM_KB:=1280
 DEVICE_LIST:=CY8C6247FDI-D52 CYW43012TC0EKUBG
-DEVICE_TOOL_IDS:=bsp-assistant bt-configurator capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator ml-configurator project-creator qspi-configurator seglcd-configurator smartio-configurator usbdev-configurator
+DEVICE_TOOL_IDS:=bsp-assistant bt-configurator capsense-configurator capsense-tuner device-configurator dfuh-tool library-manager lin-configurator ml-configurator motor-suite-gui project-creator qspi-configurator seglcd-configurator smartio-configurator usbdev-configurator
 RECIPE_DIR:=$(SEARCH_recipe-make-cat1a)
